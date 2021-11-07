@@ -1,3 +1,9 @@
 node_modules
 .env
 package-lock.json
+/.idea/aws.xml
+/.idea/codeStyles/codeStyleConfig.xml
+/.idea/modules.xml
+/.idea/node-authentication-jwt-mongodb.iml
+/.idea/vcs.xml
+/.idea/workspace.xml
