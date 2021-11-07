@@ -2,13 +2,12 @@ const express = require("express");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 require("dotenv").config();
-const PORT = 5000;
 
 const authRoutes = require("./routes/users");
 
 mongoose
   .connect(process.env.MONGO_URI, {
-    dbName: "TheNodeAuth",
+    dbName: "Eventyangu",
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
@@ -33,6 +32,6 @@ app.get("/ping", (req, res) => {
 
 app.use("/users", authRoutes);
 
-app.listen(PORT, () => {
-  console.log("Server started listening on PORT : " + PORT);
+app.listen(process.env.PORT, () => {
+  console.log("Server started listening on PORT : " + process.env.PORT);
 });

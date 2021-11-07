@@ -8,7 +8,7 @@ const AuthController = require("../src/users/user.controller");
 
 router.post("/signup", cleanBody, AuthController.Signup);
 
-router.patch("/activate", cleanBody, AuthController.Activate);
+// router.patch("/activate", cleanBody, AuthController.Activate);
 
 router.post("/login", cleanBody, AuthController.Login);
 

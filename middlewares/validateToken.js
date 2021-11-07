@@ -39,7 +39,7 @@ async function validateToken(req, res, next) {
 
       return res.status(401).json(result);
     }
-
+    //TODO: get rid of referral code.
     result["referralCode"] = user.referralCode;
 
     req.decoded = result;
